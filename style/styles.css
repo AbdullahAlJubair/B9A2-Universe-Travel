@@ -297,6 +297,8 @@ nav {
     padding: 20px;
     flex: 1;
     flex-basis: 320px;
+    border-radius: 8px;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
 }
 .priceChart>h4 {
     font-size: 18px;
@@ -316,14 +318,14 @@ nav {
     padding: 5px;
 }
 .priceList .name {
-    color: var(--blackText);
+    color: var(--lightGrayText);
     font-size: 18px;
     font-weight: 500;
 }
 .priceBtn {
     background: #f9f9ff;
     border: 1px solid #eee;
-    border-radius: 2px;
+    border-radius: 5px;
     color: #222;
     font-size: 14px;
     font-weight: 600;
@@ -332,7 +334,7 @@ nav {
 }
 .priceBtn:hover {
     background-color: var(--themeColor);
-    color: #222;
+    color: #fff;
 }
 
 /* Service Section Design */
