@@ -6,9 +6,10 @@
 }
 
 :root {
-    --orangeText: #FF5400;
+    --themeColor: #FF5400;
     --lightGrayText: #424247;
     --blackText: #131318;
+    --paragraphText: #131318B2;
 }
 
 header,
@@ -39,7 +40,7 @@ nav {
 }
 
 .color-text {
-    color: var(--orangeText);
+    color: var(--themeColor);
 }
 
 .navIcon {
@@ -62,7 +63,7 @@ nav {
 }
 
 .menu>ul>li:hover a {
-    color: var(--orangeText);
+    color: var(--themeColor);
 
 }
 
@@ -113,7 +114,6 @@ nav {
 
 .filterSection>input,
 .filterSection>select,
-.filterSection>option,
 .filterSection>.filterBtn {
     border: 0;
     outline: 0;
@@ -127,13 +127,64 @@ nav {
     cursor: pointer;
 }
 
+.filterSection>select {
+    border-right: 10px solid #fff;
+}
+
 .filterSection>.filterBtn {
-    background-color: var(--orangeText);
+    background-color: var(--themeColor);
     color: #fff;
     font-weight: 700;
 }
 
+.filterSection>.filterBtn:hover {
+    background-color: #f55200;
+}
 
+/*---------Popular Section----------*/
+.textWithImage {
+    margin-top: 100px;
+    padding: 20px;
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titleText {
+    color: var(--blackText);
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 24px;
+}
+
+.bodyText {
+    color: var(--paragraphText);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom: 14px;
+}
+
+.imgContainer img {
+    max-width: 540px;
+    object-fit: cover;
+}
+
+.btn {
+    background-color: var(--themeColor);
+    color: #FFF;
+    padding: 14px 34px;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 800;
+    border: 0;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: #f55200;
+}
 /* Tab Responsive Design */
 @media only screen and (max-width:990px) {
     .logo img {
@@ -172,9 +223,19 @@ nav {
 
     .filterSection>input,
     .filterSection>select,
-    .filterSection>option,
     .filterSection>.filterBtn {
         width: 100%;
+    }
+    .textWithImage {
+        margin-top: 40px;
+        flex-direction: column;
+        padding: 0 40px;
+    }
+    .imgContainer img {
+        width: 100%;
+    }
+    .titleText {
+        font-size: 34px;
     }
 }
 
@@ -195,6 +256,17 @@ nav {
     .bannerInner p {
         font-size: 14px;
         width: 100%;
+    }
+    .textWithImage {
+        margin-top: 20px;
+        flex-direction: column;
+        padding: 0 20px;
+    }
+    .titleText {
+        font-size: 24px;
+    }
+    .bodyText{
+        font-size: 14px;
     }
 
 }
