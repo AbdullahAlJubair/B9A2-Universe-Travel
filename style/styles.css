@@ -31,6 +31,7 @@ nav {
     display: flex;
     align-items: center;
     gap: 10px;
+    cursor: pointer;
 }
 
 .logo>h2 {
@@ -75,6 +76,7 @@ nav {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    margin: 0 20px;
     margin-top: 20px;
 }
 
@@ -274,6 +276,64 @@ nav {
     grid-column: span 7;
     grid-row: span 1;
 }
+/* Price Chart Section Design */
+.priceSection {
+    background-image: url('../images/price-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0 20px;
+    padding: 100px 20px;
+}
+.priceChartLayout {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.priceChart {
+    background: #fff;
+    padding: 20px;
+    flex: 1;
+    flex-basis: 320px;
+}
+.priceChart>h4 {
+    font-size: 18px;
+    text-align: center;
+    border-bottom: 1px solid #f8b600;
+    padding-bottom: 20px;
+}
+.priceChart>ul {
+    list-style: none;
+    margin-top: 30px;
+}
+.priceList {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+.priceList .name {
+    color: var(--blackText);
+    font-size: 18px;
+    font-weight: 500;
+}
+.priceBtn {
+    background: #f9f9ff;
+    border: 1px solid #eee;
+    border-radius: 2px;
+    color: #222;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.priceBtn:hover {
+    background-color: var(--themeColor);
+    color: #222;
+}
 
 /* Service Section Design */
 .serviceContainer {
@@ -347,6 +407,7 @@ nav {
     justify-content: start;
     flex-wrap: wrap;
     gap: 24px;
+    row-gap: 10px;
     margin-bottom: 25px;
 }
 
@@ -483,11 +544,6 @@ footer {
     margin-right: 25px;
 }
 
-@media only screen and (min-width: 601px) and (max-width: 990px) {
-    .textContainer {
-        text-align: center;
-    }
-}
 /* Tablet Responsive Design */
 @media only screen and (max-width:990px) {
     .logo img {
@@ -684,6 +740,10 @@ footer {
 
     .textWrap {
         margin-bottom: 10px;
+    }
+    .priceSection {
+        padding: 20px 10px;
+        margin: 20px 0;
     }
 
     .card {
