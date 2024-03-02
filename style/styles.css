@@ -13,10 +13,11 @@
 
 header,
 main {
-    max-width: 1300px;
+    max-width: 1250px;
     margin: 0 auto;
 }
 
+/*---------Navigation Section----------*/
 nav {
     display: flex;
     justify-content: space-between;
@@ -64,30 +65,136 @@ nav {
     color: var(--orangeText);
 
 }
+
+/*---------Banner Section----------*/
+.banner {
+    background-image: url(../images/Group1.png);
+    height: 500px;
+    border-radius: 16px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 20px;
+}
+
+.bannerInner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%);
+}
+
+.bannerInner h1 {
+    color: #FFF;
+    font-size: 64px;
+    font-weight: 800;
+}
+
+.bannerInner p {
+    width: 676px;
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.filterSection {
+    display: flex;
+    gap: 24px;
+    padding: 16px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
+}
+
+.filterSection>input,
+.filterSection>select,
+.filterSection>option,
+.filterSection>.filterBtn {
+    border: 0;
+    outline: 0;
+    border-radius: 8px;
+    width: 174px;
+    height: 52px;
+    padding: 0 10px;
+    color: rgba(19, 19, 24, 0.50);
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.filterSection>.filterBtn {
+    background-color: var(--orangeText);
+    color: #fff;
+    font-weight: 700;
+}
+
+
 /* Tab Responsive Design */
 @media only screen and (max-width:990px) {
+    .logo img {
+        width: 30px;
+    }
+
     .logo>h2 {
         font-size: 18px;
     }
+
     .menu>ul {
         gap: 15px;
     }
+
     .menu>ul>li>a {
         font-size: 14px;
+    }
+
+    .bannerInner {
+        padding: 20px;
+    }
+
+    .bannerInner h1 {
+        font-size: 40px;
+    }
+
+    .bannerInner p {
+        width: 90%;
+    }
+
+    .filterSection {
+        flex-direction: column;
+        width: 95%;
+
+    }
+
+    .filterSection>input,
+    .filterSection>select,
+    .filterSection>option,
+    .filterSection>.filterBtn {
+        width: 100%;
     }
 }
 
 /* Mobile Responsive Design */
 @media only screen and (max-width: 600px) {
-
-    .logo img {
-        width: 30px;
-    }
     .menu>ul {
         display: none;
     }
+
     .navIcon {
         display: block;
     }
-    
+
+    .bannerInner h1 {
+        font-size: 22px;
+    }
+
+    .bannerInner p {
+        font-size: 14px;
+        width: 100%;
+    }
+
 }
