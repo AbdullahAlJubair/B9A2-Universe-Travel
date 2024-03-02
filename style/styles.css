@@ -192,12 +192,14 @@ nav {
     padding: 20px;
     margin-top: 100px;
 }
+
 .textWrap {
     width: 645px;
     margin: 0 auto;
     margin-bottom: 50px;
     text-align: center;
 }
+
 .gallery {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -277,6 +279,7 @@ nav {
 .serviceContainer {
     margin-top: 100px;
 }
+
 .service {
     display: flex;
     justify-content: center;
@@ -285,32 +288,40 @@ nav {
     gap: 24px;
     flex-wrap: wrap;
 }
+
 .card {
     border-radius: 16px;
     padding: 30px;
     flex-basis: 575px;
 }
-.card>.titleText{
+
+.card>.titleText {
     font-size: 24px;
     margin-bottom: 10px;
 }
+
 .card img {
     margin-bottom: 30px;
 }
+
 #card-1 {
     background-color: rgba(251, 181, 99, 0.05);
 }
+
 #card-2 {
     background-color: rgba(41, 206, 246, 0.05);
 }
+
 #card-3 {
     background-color: rgba(233, 68, 68, 0.05);
 }
+
 /* Deals & Discounts Section */
 .deals {
     padding: 20px;
     margin-top: 100px;
 }
+
 .dealsContainer {
     display: flex;
     justify-content: right;
@@ -323,12 +334,14 @@ nav {
     padding: 55px;
     margin-bottom: 20px;
 }
+
 .dealsInner {
- width: 580px;
- padding: 55px;
- background-color: rgba(255, 255, 255, 0.80);
- border-radius: 16px;
+    width: 580px;
+    padding: 55px;
+    background-color: rgba(255, 255, 255, 0.80);
+    border-radius: 16px;
 }
+
 .smallDetails {
     display: flex;
     justify-content: start;
@@ -336,23 +349,30 @@ nav {
     gap: 24px;
     margin-bottom: 25px;
 }
+
 .smallDetails>p>i {
     color: var(--themeColor);
 }
+
 .smallDetails>p {
     color: #5a5a5d;
     font-size: 16px;
 }
+
 .dealsInner>.titleText {
     font-size: 24px;
 }
+
 .price.titleText {
     color: var(--themeColor);
     margin-bottom: 0;
 }
-#deals1, #deals3 {
+
+#deals1,
+#deals3 {
     background-image: url('../images/Group2.png');
 }
+
 #deals2 {
     justify-content: start;
     background-image: url('../images/Group3.png');
@@ -363,6 +383,88 @@ nav {
     width: 450px;
 }
 
+/* Newsletter Section Design */
+.newsContainer {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    padding: 20px;
+}
+
+.newsletter {
+    border: 1px solid var(--themeColor);
+    border-radius: 16px;
+    padding: 40px 20px;
+}
+
+.newsletter h4 {
+    font-size: 24px;
+}
+
+.newsletter>hr {
+    border-color: #1313181A;
+}
+
+.newsletter>form {
+    margin-top: 24px;
+}
+
+.newsletter>form>input {
+    display: block;
+    border: 0;
+    outline: 0;
+    background: rgba(19, 19, 24, 0.05);
+    border-radius: 8px;
+    width: 100%;
+    height: 52px;
+    padding: 0 10px;
+    color: rgba(19, 19, 24, 0.50);
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    margin-bottom: 16px;
+}
+
+.newsletter>form>input[type='submit'] {
+    background-color: var(--themeColor);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.newsImg {
+    position: relative;
+}
+
+.newsImg>img {
+    width: 100%;
+}
+
+.promo {
+    max-width: 325px;
+    position: absolute;
+    bottom: 70px;
+    right: 0;
+    background-color: var(--themeColor);
+    padding: 20px;
+    border-radius: 16px;
+    text-align: center;
+    transform: rotate(-35deg);
+}
+
+.promo>p {
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.promo>h5 {
+    color: #FFF;
+    font-size: 32px;
+    font-weight: 800;
+}
 
 
 /* Tablet Responsive Design */
@@ -420,49 +522,67 @@ nav {
     .titleText {
         font-size: 34px;
     }
-    .destination, .serviceContainer, .deals {
+
+    .destination,
+    .serviceContainer,
+    .deals,
+    .newsContainer {
         margin-top: 40px;
     }
+
     .textWrap {
         width: 100%;
         padding: 0 10px;
     }
+
     .gallery {
         grid-template-rows: repeat(4, 200px);
     }
+
     .galleryTitle {
         font-size: 18px;
         font-weight: 700;
     }
+
     #item1 {
         grid-column: span 6;
     }
-    
+
     #item2 {
         grid-column: span 6;
     }
-    
+
     #item3 {
         grid-column: span 6;
     }
-    
+
     #item4 {
         grid-column: span 6;
     }
-    
+
     #item5 {
         grid-column: span 6;
     }
-    
+
     #item6 {
         grid-column: span 6;
     }
-    
+
     #item7 {
         grid-column: span 12;
     }
+
     .imgContainer iframe {
         max-width: 100%;
+    }
+
+    .newsContainer {
+        flex-direction: column;
+    }
+
+    .newsletter,
+    .newsImg {
+        width: 100%;
     }
 }
 
@@ -491,7 +611,8 @@ nav {
         padding: 0 20px;
     }
 
-    .titleText, .card>.titleText {
+    .titleText,
+    .card>.titleText {
         font-size: 20px;
         margin-bottom: 16px;
     }
@@ -499,72 +620,103 @@ nav {
     .bodyText {
         font-size: 14px;
     }
-    .destination, .serviceContainer, .deals {
+
+    .destination,
+    .serviceContainer,
+    .deals,
+    .newsContainer {
         margin-top: 20px;
     }
+
     .gallery {
-        grid-template-rows: repeat(7,200px);
+        grid-template-rows: repeat(7, 200px);
         gap: 16px;
     }
+
     #item1 {
         grid-column: span 12;
     }
-    
+
     #item2 {
         grid-column: span 12;
     }
-    
+
     #item3 {
         grid-column: span 12;
     }
-    
+
     #item4 {
         grid-column: span 12;
     }
-    
+
     #item5 {
         grid-column: span 12;
     }
-    
+
     #item6 {
         grid-column: span 12;
     }
-    
+
     #item7 {
         grid-column: span 12;
     }
+
     .textWrap {
         margin-bottom: 10px;
     }
+
     .card {
         padding: 20px 15px;
     }
+
     .dealsContainer {
         align-items: end;
         padding: 16px;
     }
+
     .dealsInner {
         padding: 30px 20px;
-       }
-       .smallDetails {
+    }
+
+    .smallDetails {
         margin-bottom: 10px;
         row-gap: 5px;
     }
+
     .smallDetails>p {
         font-size: 14px;
     }
+
     .dealsInner>.titleText {
         font-size: 18px;
         margin-bottom: 10px;
     }
+
     .dealsInner>.bodyText {
         font-size: 14px;
         margin-bottom: 10;
         line-height: 1.5;
     }
+
     .btn {
         padding: 10px 20px;
         margin-top: 5px;
         font-size: 14px;
+    }
+
+    .promo {
+        max-width: 215px;
+        right: 5px;
+        bottom: 42px;
+        transform: rotate(-32deg);
+        border-radius: 8px;
+    }
+
+    .promo>p {
+        font-size: 14px;
+    }
+
+    .promo>h5 {
+        font-size: 18px;
     }
 }
