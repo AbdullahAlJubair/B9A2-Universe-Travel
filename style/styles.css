@@ -306,8 +306,66 @@ nav {
 #card-3 {
     background-color: rgba(233, 68, 68, 0.05);
 }
+/* Deals & Discounts Section */
+.deals {
+    padding: 20px;
+    margin-top: 100px;
+}
+.dealsContainer {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 16px;
+    padding: 55px;
+    margin-bottom: 20px;
+}
+.dealsInner {
+ width: 580px;
+ padding: 55px;
+ background-color: rgba(255, 255, 255, 0.80);
+ border-radius: 16px;
+}
+.smallDetails {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-bottom: 25px;
+}
+.smallDetails>p>i {
+    color: var(--themeColor);
+}
+.smallDetails>p {
+    color: #5a5a5d;
+    font-size: 16px;
+}
+.dealsInner>.titleText {
+    font-size: 24px;
+}
+.price.titleText {
+    color: var(--themeColor);
+    margin-bottom: 0;
+}
+#deals1, #deals3 {
+    background-image: url('../images/Group2.png');
+}
+#deals2 {
+    justify-content: start;
+    background-image: url('../images/Group3.png');
+}
 
-/* Tab Responsive Design */
+/* Text With Video Section */
+.imgContainer iframe {
+    width: 450px;
+}
+
+
+
+/* Tablet Responsive Design */
 @media only screen and (max-width:990px) {
     .logo img {
         width: 30px;
@@ -356,13 +414,13 @@ nav {
     }
 
     .imgContainer img {
-        width: 100%;
+        max-width: 100%;
     }
 
     .titleText {
         font-size: 34px;
     }
-    .destination, .serviceContainer {
+    .destination, .serviceContainer, .deals {
         margin-top: 40px;
     }
     .textWrap {
@@ -403,6 +461,9 @@ nav {
     #item7 {
         grid-column: span 12;
     }
+    .imgContainer iframe {
+        max-width: 100%;
+    }
 }
 
 /* Mobile Responsive Design */
@@ -438,11 +499,12 @@ nav {
     .bodyText {
         font-size: 14px;
     }
-    .destination, .serviceContainer {
+    .destination, .serviceContainer, .deals {
         margin-top: 20px;
     }
     .gallery {
         grid-template-rows: repeat(7,200px);
+        gap: 16px;
     }
     #item1 {
         grid-column: span 12;
@@ -476,5 +538,33 @@ nav {
     }
     .card {
         padding: 20px 15px;
+    }
+    .dealsContainer {
+        align-items: end;
+        padding: 16px;
+    }
+    .dealsInner {
+        padding: 30px 20px;
+       }
+       .smallDetails {
+        margin-bottom: 10px;
+        row-gap: 5px;
+    }
+    .smallDetails>p {
+        font-size: 14px;
+    }
+    .dealsInner>.titleText {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .dealsInner>.bodyText {
+        font-size: 14px;
+        margin-bottom: 10;
+        line-height: 1.5;
+    }
+    .btn {
+        padding: 10px 20px;
+        margin-top: 5px;
+        font-size: 14px;
     }
 }
