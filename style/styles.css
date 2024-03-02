@@ -295,10 +295,10 @@ nav {
 .priceChart {
     background: #fff;
     padding: 20px;
-    flex: 1;
-    flex-basis: 320px;
+    flex-basis: 350px;
     border-radius: 8px;
     box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+    animation: bounce 2s ease-in infinite alternate;
 }
 .priceChart>h4 {
     font-size: 18px;
@@ -315,7 +315,12 @@ nav {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 10px;
-    padding: 5px;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.priceList:hover {
+    background-color: #f7f7f79a;
 }
 .priceList .name {
     color: var(--lightGrayText);
@@ -332,9 +337,18 @@ nav {
     padding: 10px 20px;
     cursor: pointer;
 }
-.priceBtn:hover {
+.priceBtn:hover, .priceList:hover .priceBtn {
     background-color: var(--themeColor);
     color: #fff;
+}
+@keyframes bounce {
+    from {
+        transform: translateY(5px);
+    }
+    to {
+        transform: translateY(0);
+    }
+    
 }
 
 /* Service Section Design */
@@ -354,7 +368,7 @@ nav {
 .card {
     border-radius: 16px;
     padding: 30px;
-    flex-basis: 460px;
+    flex-basis: calc((100% - 24px)/2);
 }
 
 .card>.titleText {
@@ -650,7 +664,9 @@ footer {
     #item7 {
         grid-column: span 12;
     }
-
+    .card {
+        flex-basis: calc(100% - 24px);
+    }
     .imgContainer iframe {
         max-width: 100%;
     }
